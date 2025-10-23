@@ -17,14 +17,14 @@ describe('rotate', () => {
     const matrix = TETROMINOS.L.shape;
     const rotatedMatrix = rotate(matrix);
     const expectedMatrix = [
-      [0, 0, 'L'],
-      ['L', 'L', 'L'],
-      [0, 0, 0],
+      [0, 'L', 0],
+      [0, 'L', 0],
+      [0, 'L', 'L'],
     ];
-    // After one rotation
-    const rotatedOnce = rotate(matrix);
+    expect(rotatedMatrix).toEqual(expectedMatrix);
+
     // After two rotations
-    const rotatedTwice = rotate(rotatedOnce);
+    const rotatedTwice = rotate(rotatedMatrix);
     // After three rotations
     const rotatedThrice = rotate(rotatedTwice);
     // After four rotations, it should be back to the original
