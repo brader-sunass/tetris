@@ -1,4 +1,5 @@
 # 🎮 Tetris en React con TypeScript
+# ARNOLD GUERRERO
 
 Un clon del clásico juego Tetris desarrollado con React, TypeScript y Vite. Este proyecto incluye características modernas como pruebas unitarias, un sistema de puntuación y una interfaz de usuario intuitiva.
 
